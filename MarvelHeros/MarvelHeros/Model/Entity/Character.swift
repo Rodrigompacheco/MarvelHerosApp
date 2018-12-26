@@ -8,14 +8,14 @@
 
 import UIKit
 
-class Character{
+class Character: Decodable{
     var name: String
     var description: String
-    var photo: UIImage
+    //var photo: UIImage
     
-    init(name: String, description: String, photo: UIImage) {
+    init(name: String, description: String){//, photo: UIImage) {
         self.name = name
         self.description = description
-        self.photo = photo
+       // self.photo = photo
     }
 }
