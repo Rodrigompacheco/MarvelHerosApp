@@ -8,6 +8,21 @@
 
 import Foundation
 
-struct MarvelAPI{
-    
+enum MarvelAPI {
+    case character(String)
+    case characters
 }
+
+extension MarvelAPI{
+    private var baseURL: URL{ return URL(string: "https://gateway.marvel.com")! }
+    
+    var path: String {
+        switch self {
+        case .characters:
+            return "\(baseURL)/v1/public/characters"
+        case .character(let characterId):
+            return "\(baseURL)/v1/public/characters/\(characterId)"
+        }
+    }
+}
+
