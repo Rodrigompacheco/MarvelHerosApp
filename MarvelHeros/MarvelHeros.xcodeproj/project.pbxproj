@@ -10,6 +10,7 @@
 		4115593C21D0147F00915DFE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115593B21D0147F00915DFE /* Character.swift */; };
 		4115593E21D017AE00915DFE /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4115593D21D017AE00915DFE /* CharacterCollectionViewCell.swift */; };
 		4115594021D0184600915DFE /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4115593F21D0184600915DFE /* CharacterCell.xib */; };
+		41C4A4A221D3E0E6006B899B /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4A4A121D3E0E6006B899B /* MarvelAPI.swift */; };
 		41E5877A21CFBD5000178DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5877921CFBD5000178DFC /* AppDelegate.swift */; };
 		41E5877C21CFBD5000178DFC /* CharacterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5877B21CFBD5000178DFC /* CharacterListVC.swift */; };
 		41E5877F21CFBD5000178DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E5877D21CFBD5000178DFC /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		4115593B21D0147F00915DFE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		4115593D21D017AE00915DFE /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		4115593F21D0184600915DFE /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		41C4A4A121D3E0E6006B899B /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		41E5877621CFBD5000178DFC /* MarvelHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E5877921CFBD5000178DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E5877B21CFBD5000178DFC /* CharacterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVC.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		4123014121D270630032E6E0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				41C4A4A121D3E0E6006B899B /* MarvelAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				4115593E21D017AE00915DFE /* CharacterCollectionViewCell.swift in Sources */,
 				41E5877C21CFBD5000178DFC /* CharacterListVC.swift in Sources */,
 				41E5877A21CFBD5000178DFC /* AppDelegate.swift in Sources */,
+				41C4A4A221D3E0E6006B899B /* MarvelAPI.swift in Sources */,
 				41E5878221CFBD5000178DFC /* MarvelHeros.xcdatamodeld in Sources */,
 				4115593C21D0147F00915DFE /* Character.swift in Sources */,
 			);
