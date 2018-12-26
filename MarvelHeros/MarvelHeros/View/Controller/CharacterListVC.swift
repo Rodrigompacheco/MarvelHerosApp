@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CharacterListVC: UIViewController {
 
+    @IBOutlet weak var characListCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
