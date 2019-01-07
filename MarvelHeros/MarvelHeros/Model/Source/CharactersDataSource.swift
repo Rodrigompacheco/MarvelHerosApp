@@ -16,24 +16,34 @@ class CharactersDataSource{
     private init() {}
     
     func getAllCharacters() -> [Character]{
-        let data = marvelAPIManager.request(query: .characters)
-        do {
-            let characters = try JSONDecoder().decode([Character].self, from: data)
-            return characters
-        } catch let jsonErr{
-            print("Erro", jsonErr)
-            return []
+        let endpoint = MarvelAPI.characters
+
+        let data = marvelAPIManager.request(for: endpoint) { (result: Result<Character>) in
+            print(result)
         }
+        
+        
+//        let data = marvelAPIManager.request(query: .characters, completion: Collection)
+
+//        do {
+//            let characters = try JSONDecoder().decode([Character].self, from: data)
+//            return characters
+//        } catch let jsonErr{
+//            print("Erro", jsonErr)
+//            return []
+//        }
+        return []
     }
     
     func getCharacter(characterId id: String) -> Character? {
-        let data = marvelAPIManager.request(query: .character(id))
-        do {
-            let character = try JSONDecoder().decode(Character.self, from: data)
-            return character
-        } catch let jsonErr{
-            print("Erro", jsonErr)
-            return nil
-        }
+//        let data = marvelAPIManager.request(query: .character(id))
+//        do {
+//            let character = try JSONDecoder().decode(Character.self, from: data)
+//            return character
+//        } catch let jsonErr{
+//            print("Erro", jsonErr)
+//            return nil
+//        }
+        return nil
     }
 }

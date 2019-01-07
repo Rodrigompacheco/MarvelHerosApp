@@ -8,14 +8,9 @@
 
 import UIKit
 
-class Character: Decodable{
+struct Character: Decodable{
+    let id: Int
     var name: String
     var description: String
     //var photo: UIImage
-    
-    init(name: String, description: String){//, photo: UIImage) {
-        self.name = name
-        self.description = description
-       // self.photo = photo
-    }
 }

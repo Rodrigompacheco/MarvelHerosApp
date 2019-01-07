@@ -15,6 +15,12 @@ class CharacterListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let shared = MarvelAPIManager.shared
+        
+        let json = shared.request(for: .characters) { (result: Result<DataPackage<Character>>) in
+            print(result)
+        }
     }
 
 
